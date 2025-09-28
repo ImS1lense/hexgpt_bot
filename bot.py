@@ -1,12 +1,13 @@
 import logging
+import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackContext, CallbackQueryHandler
 import openai
 
 # Настройки
 logging.basicConfig(level=logging.INFO)
-openai.api_key = "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"
-BOT_TOKEN = "7916414460:AAETN_SRzcIcrAJz2TFFpKrCd9l--Fofd8Q"
+openai.api_key = os.environ.get("OPENAI_API_KEY")
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
 class SavageBot:
     def __init__(self):
