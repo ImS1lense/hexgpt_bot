@@ -21,8 +21,8 @@ class SavageBot:
 Задавай свой вопрос, но готовься получить пизды вместо ответа!"""
 
         keyboard = [
-            [InlineKeyboardButton("💢 Наехать на бота", callback_data="start_chat")],
-            [InlineKeyboardButton("🖕 Сбросить диалог", callback_data="clear")],
+            [InlineKeyboardButton("💢Наехать на бота", callback_data="start_chat")],
+            [InlineKeyboardButton("🖕Сбросить диалог", callback_data="clear")],
         ]
         
         await update.message.reply_text(text, reply_markup=InlineKeyboardMarkup(keyboard))
@@ -115,3 +115,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
