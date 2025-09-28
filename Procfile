@@ -1,3 +1,1 @@
-worker: python gpt_bot.py
-
-web: python bot.py
+worker: python bot.py
